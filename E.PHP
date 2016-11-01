@@ -22,7 +22,7 @@ function 是否为空($str){
 	return empty($str);
 }
 function 创建文件夹($name){
-	return mkdir($path);
+	return mkdir($name);
 }
 function 文件是否存在($file){
 	return file_exists($file);
