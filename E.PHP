@@ -18,6 +18,18 @@ function 设置COOKIE($name,$value,$time){
 function 取COOKIE($name=''){
 	return $_COOKIE[$name];
 }
+function 是否为空($str){
+	return empty($str);
+}
+function 创建文件夹($name){
+	return mkdir($path);
+}
+function 文件是否存在($file){
+	return file_exists($file);
+}
+function 正则表达式($pattern,$subject,$matches=''){
+	return preg_match($pattern,$subject,$matches);
+}
 function 十六到十($str){
 	return hexdec($str);
 }
