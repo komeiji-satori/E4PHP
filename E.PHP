@@ -111,7 +111,7 @@ function Json反序列化($str){
 function HTTP读文本($url){
 	return file_get_contents($url);
 }
-function 写文件($str,$filename){
+function 写到文件($str,$filename){
 	file_put_contents($filename,$str);
 	return true;
 }
