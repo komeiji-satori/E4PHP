@@ -30,8 +30,17 @@ function 文件是否存在($file){
 function 正则表达式($pattern,$subject,$matches=''){
 	return preg_match($pattern,$subject,$matches);
 }
-function 十六到十($str){
+function 十六进制转十进制($str){
 	return hexdec($str);
+}
+function ASCII转十六进制($str){
+	return bin2hex($str);
+}
+function 十六进制转ASCII($str){
+	return hex2bin($str);
+}
+function 反转字符串($str){
+	return strrev($str);
 }
 function 文本替换($search,$replace,$subject){
 	return str_replace($search,$replace,$subject);
