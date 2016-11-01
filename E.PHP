@@ -9,6 +9,9 @@ function 退出(){
 function 文件上传($files){
 	return $_FILES[$files];
 }
+function 删除文件($file){
+	return unlink($file);
+}
 function HASH加密($str,$salt){
 	return crypt($str,$salt);
 }
@@ -65,6 +68,23 @@ function HTML标记过滤($str){
 }
 function 调试输出($str){
 	print_r($str);
+}
+function 取文件大小($file){
+	return filesize($file);
+	clearstatcache();
+}
+function 延迟($sec){
+	sleep($sec);
+}
+function 取文件格式($file){
+	return filetype($file);
+	clearstatcache();
+}
+function 取磁盘可用空间($disk_name){
+	return disk_free_space($disk_name);
+}
+function 取磁盘总空间($disk_name){
+	return disk_total_space($disk_name);
 }
 function 获取URL参数($str){
 	return $_GET[$str];
