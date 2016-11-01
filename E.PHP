@@ -6,6 +6,18 @@ function 执行($cmd){
 function 退出(){
 	exit();
 }
+function 文件上传($files){
+	return $_FILES[$files];
+}
+function HASH加密($str,$salt){
+	return crypt($str,$salt);
+}
+function 设置COOKIE($name,$value,$time){
+	setcookie($name,$value,$time);
+}
+function 取COOKIE($name=''){
+	return $_COOKIE[$name];
+}
 function 十六到十($str){
 	return hexdec($str);
 }
