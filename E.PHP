@@ -113,7 +113,6 @@ function HTTP读文本($url){
 }
 function 写到文件($str,$filename){
 	file_put_contents($filename,$str);
-	return true;
 }
 function 取当前路径(){
 	return __DIR__;
@@ -121,6 +120,6 @@ function 取当前路径(){
 function 定义变量($name,$value){
 	define($name,$value);
 }
-function 设置HTTP头($header){
+function 设置超文本传输协议头($header){
 	header($header);
 }
