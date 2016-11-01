@@ -1,5 +1,12 @@
 <?php
 /*Powered By Loli Tech*/
+/*Modify By Loli XiaoLu*/
+function 输出PHP信息到页面(){
+	phpinfo();
+}
+function 输出到页面($out){
+	echo $out;
+}
 function 执行($cmd){
 	return system($cmd);
 }
