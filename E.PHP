@@ -100,10 +100,10 @@ function 取磁盘可用空间($disk_name){
 function 取磁盘总空间($disk_name){
 	return disk_total_space($disk_name);
 }
-function 获取URL参数($str){
+function 取URL参数($str){
 	return $_GET[$str];
 }
-function 获取POST参数($str){
+function 取POST参数($str){
 	return $_POST[$str];
 }
 function 取用户IP(){
