@@ -64,6 +64,16 @@ function 文本添加反斜杠($str,$word){
 function 取文本长度($str){
 	return strlen($str);
 }
+function Object转Array($array) {  
+    if(is_object($array)) {  
+        $array = (array)$array;  
+     } if(is_array($array)) {  
+         foreach($array as $key=>$value) {  
+             $array[$key] = Object转Array($value);  
+             }  
+     }  
+     return $array;  
+}
 function 取文本位置($str,$word){
 	return strpos($str,$word);
 }
@@ -139,7 +149,7 @@ function Json序列化($array){
 	return json_encode($array);
 }
 function Json反序列化($str){
-	return json_decode($str);
+	return Object转Array(json_decode($str));
 }
 function HTTP读文本($url){
 	return file_get_contents($url);
