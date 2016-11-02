@@ -10,7 +10,7 @@ function 执行($cmd){
 function 退出(){
 	exit();
 }
-function 文件上传($files){
+function 取文件上传($files){
 	return $_FILES[$files];
 }
 function 删除文件($file){
