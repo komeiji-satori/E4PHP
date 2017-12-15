@@ -160,7 +160,7 @@ function 写到文件($str,$filename){
 function 取当前路径(){
 	return __DIR__;
 }
-function 定义变量($name,$value){
+function 定义常量($name,$value){
 	define($name,$value);
 }
 function 设置超文本传输协议头($header){
